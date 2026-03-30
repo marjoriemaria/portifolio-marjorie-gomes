@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio | Desenvolvedora Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg-dark: #0f0f14;
+      --bg-card: #1a1a24;
+      --pink: #ff4fa3;
+      --pink-soft: #ff8fc7;
+      --text: #f1f1f1;
+      --text-muted: #b5b5c2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--pink);
+    }
+
+    header h2 {
+      font-weight: 400;
+      color: var(--pink-soft);
+      margin: 10px 0;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 20px auto;
+      color: var(--text-muted);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--pink);
+      border-left: 4px solid var(--pink);
+      padding-left: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h4 {
+      color: var(--pink-soft);
+      margin-bottom: 10px;
+    }
+
+    .card p, .card li {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "▸";
+      color: var(--pink);
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--pink);
+    }
+    .carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background: transparent;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-buttons button:hover {
+  background: var(--pink);
+  color: #000;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- APRESENTAÇÃO -->
+  <header>
+    <div>
+      <img style="border-radius: 8rem; border: #9c3366 4px solid;" src="img/Design sem nome (4).png" alt="foto minha">
+      <h1>Marjorie Maria das Noves Gomes</h1>
+      <h2>Desenvolvedora Web</h2>
+      <p>
+        Desenvolvedora web com foco em criar interfaces modernas, acessíveis e
+        funcionais. Apaixonada por tecnologia, design e soluções digitais que
+        unem estética e eficiência.
+      </p>
+    </div>
+  </header>
+
+  <!-- LINGUAGENS -->
+  <section>
+    <h3>Principais Linguagens & Tecnologias</h3>
+    <div class="grid">
+      <div class="card"><h4>HTML5</h4><p>Estruturação semântica e acessível.</p></div>
+      <div class="card"><h4>CSS</h4><p>Layouts responsivos, criativos e UI moderna.</p></div>
+      <div class="card"><h4>JavaScript</h4><p>Interatividade, lógica e dinamismo.</p></div>
+      <div class="card"><h4>Frameworks</h4><p>Bootstrap, jQuery</p></div>
+      <div class="card"><h4>Banco de dados</h4><p>Linguagem SQL</p></div>
+      <div class="card"><h4>Back-End</h4><p>Python(básico), PHP, C#</p></div>
+    </div>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
+  <section>
+    <h3>Competências</h3>
+    <div class="grid">
+      <div class="card">
+        <ul>
+          <li>Desenvolvimento Front-End</li>
+          <li>Responsividade Mobile</li>
+          <li>UI/UX Design</li>
+          <li>Back-End</li>
+          <li>Organização de código</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul>
+          <li>Trabalho em equipe</li>
+          <li>Comunicação clara</li>
+          <li>Aprendizado contínuo</li>
+          <li>Resolução de problemas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section>
+    <h3>Projetos em Destaque</h3>
+    
+    
+      <div class="card">
+        <h4>Site do Lar Monsenhor Alonso</h4>
+        <a style="color: #9c3366;" href="https://larmonsenhoralonso.org/">Site: larmonsenhoralonso.org</a>
+        <p>Site desenvolvido para uma Instituição de Longa Permanência para Idosos em situação de vulnerabilidade social. O site conta com as principais atividades realizadas pela instituição e informações importantes</p>
+      </div>
+    <div class="grid">
+      <div class="card">
+        <h4>Site sobre o folclore capixaba</h4>
+        <a style="color: #9c3366;" href="https://marjoriemaria.github.io/historias-do-folclore-capixaba/">Site: Folclore Capixaba</a>
+        <p>Página desenvolvida em um projeto em grupo, com o intuito de levar a cultura capixaba para um lugar de destaque, retratando no site suas principais lendas do folclore de um jeito único.</p>
+      </div>
+      <div class="card">
+        <h4>Pizza Nostra</h4>
+        <a style="color: #9c3366;" href="https://pizzariamarjoriemaria.github.io/pizzariamarjoriemaria/">Site: Pizza Nostra</a>
+        <p>Atividade realizada em sala de aula.</p>
+      </div>
+      <div class="card">
+        <h4>Raízes que gritam</h4>
+        <a style="color: #9c3366;" href="https://smicraftweb1.github.io/raizes-que-gritam/">Site: Raízes que gritam</a>
+        <p>Projeto Desenvolvido para celebrar o dia dos Povos indígenas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section>
+  <h3>Certificados & Diplomas</h3>
+
+  
+
+    <!-- CERTIFICADO 1 -->
+    <!-- <div class="card"> -->
+      <h4>Informática para a internet - SENAC Vitória</h4>
+
+      <!-- <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="img/certificado1-1.jpg" alt="Certificado frente">
+          <img src="img/certificado1-2.jpg" alt="Certificado verso">
+        </div>
+      </div> -->
+
+      <!-- <div class="carousel-buttons">
+        <button onclick="prevSlide(this)">‹</button>
+        <button onclick="nextSlide(this)">›</button>
+      </div> -->
+    <!-- </div> -->
+
+    <!-- CERTIFICADO 2 -->
+    <!-- <div class="card"> -->
+      <h4>Inglês básico e Inforrmática(Pacote Office) - EducaCenter Cariacica</h4>
+
+      <!-- <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="img/certificado2-1.jpg" alt="Certificado frente">
+          <img src="img/certificado2-2.jpg" alt="Certificado verso">
+        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="prevSlide(this)">‹</button>
+        <button onclick="nextSlide(this)">›</button>
+      </div>
+    </div> -->
+
+    <!-- CERTIFICADO 3 -->
+    <!-- <div class="card"> -->
+      <h4>Introcomp Módulo 1 - UFES - Goiabeiras</h4>
+      <h4>Cursando: Introcomp Módulo 2 - UFES - Goiabeiras</h4>
+
+      <!-- <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="img/certificado3-1.jpg" alt="Certificado frente">
+          <img src="img/certificado3-2.jpg" alt="Certificado verso">
+        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="prevSlide(this)">‹</button>
+        <button onclick="nextSlide(this)">›</button>
+      </div> -->
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+      <h4>Gestão administrativa - 8 horas - IFP</h4>
+
+      <!-- <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="img/certificado3-1.jpg" alt="Certificado frente">
+          <img src="img/certificado3-2.jpg" alt="Certificado verso">
+        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="prevSlide(this)">‹</button>
+        <button onclick="nextSlide(this)">›</button>
+      </div> -->
+    <!-- </div> -->
+
+  
+</section>
+
+
+  <!-- HOBBIES -->
+  <section>
+    <h3>Hobbies & Interesses</h3>
+    <div class="grid">
+      <div class="card">
+        <ul>
+          <li>Design digital</li>
+          <li>Leitura</li>
+          <li>Escrita criativa</li>
+          <li>Tecnologia e inovação</li>
+          <li>Aprender coisas novas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2026 • Desenvolvido por <span>Marjorie Gomes</span>
+  </footer>
+
+</body>
+ <!--<script>
+  function nextSlide(button) {
+    const card = button.closest('.card');
+    const carousel = card.querySelector('.carousel');
+    const track = carousel.querySelector('.carousel-track');
+    const slides = track.children.length;
+
+    let index = parseInt(carousel.dataset.index);
+    index = (index + 1) % slides;
+
+    carousel.dataset.index = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function prevSlide(button) {
+    const card = button.closest('.card');
+    const carousel = card.querySelector('.carousel');
+    const track = carousel.querySelector('.carousel-track');
+    const slides = track.children.length;
+
+    let index = parseInt(carousel.dataset.index);
+    index = (index - 1 + slides) % slides;
+
+    carousel.dataset.index = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+</script> -->
+
+</html>
